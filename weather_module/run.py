@@ -3,23 +3,23 @@ Outline :
 1. Read climate data from nismod2/data/scenarios/climate/ (rsds_NF1.csv -solar irradiation) aand (wss_NF1.csv - wind speed)
 2. Read historic weather data from data/energy_supply/scenarios/weather_hist_hourly.csv
 3. Wind speed height conversion (moved to supply model)
-4. Average historic weather data and get daily average 
+4. Average historic weather data and get daily average
 5. Noramlise historic weather data using dauly average values from step 4.
 6. Generate hourly weather data (weather@home data)
-7. Set input_parameters 
+7. Set input_parameters
 8. Write data to input_paramter and then input_timestep tables.
 
 """
 import os
-import numpy as np 
-import pandas as pd 
+import numpy as np
+import pandas as pd
 
 hist_year = 2010
 current_timestep = 2020 #how to get this ?
 scenario = 'NF1'
 
 def read_data(hist_year, current_timestep, scenario):
-       
+
     #path to files
     hist_data =  'C:\\Users\Lahiru Jayasuriya\\Desktop\\NISMOD\\nismod2\\data\\energy_supply\\scenarios'
     weather_data = 'C:\\Users\\Lahiru Jayasuriya\\Desktop\\NISMOD\\nismod2\\data\\scenarios\\climate'
@@ -49,16 +49,16 @@ def read_data(hist_year, current_timestep, scenario):
     #create key of [day_region]
     list_values = (wind_hist["day"].astype(str)+"_"+wind_hist["region"].astype(str)).values #hourly historic data
     wind_hist["key"] =  list_values
-    
+
     list_values2 = (wind_day_av["day"].astype(str)+"_"+wind_day_av["region"].astype(str)).values #daily averaged set of historic data
     wind_day_av["key"] =  list_values2
 
     list_values3 = (wind_daily["yearday"].astype(str)+"_"+wind_daily["region"].astype(str)).values #daily data from weather@home
     wind_daily["key"] =  list_values3
-    
+
     #merge historic hourly data and historic averaged data
     wind_norm = wind_hist.merge(wind_day_av,how='left',on="key",suffixes=('_h','_d'))
-    
+
     #normalise hourly values
     wind_norm["value"] = wind_norm["value_h"]/wind_norm["value_d"]  # normalised value = (hourly value)/(daily mean)
 
@@ -71,7 +71,7 @@ def read_data(hist_year, current_timestep, scenario):
 
     #cleaning data frame
     wind_speed.drop(["day_h","key","wss",],axis = 1, inplace=True)
-    wind_speed.rename(columns={"timestep":"year", "yearday":"day"}, inplace=True)    
+    wind_speed.rename(columns={"timestep":"year", "yearday":"day"}, inplace=True)
 
 
    #------ Get insolation for the sim year -------------
@@ -81,16 +81,16 @@ def read_data(hist_year, current_timestep, scenario):
     #create key of [day_region]
     list_values = (solar_hist["day"].astype(str)+"_"+solar_hist["region"].astype(str)).values #hourly historic data
     solar_hist["key"] =  list_values
-    
+
     list_values2 = (solar_day_av["day"].astype(str)+"_"+solar_day_av["region"].astype(str)).values #daily averaged set of historic data
     solar_day_av["key"] =  list_values2
 
     list_values3 = (solar_daily["yearday"].astype(str)+"_"+solar_daily["region"].astype(str)).values #daily data from weather@home
     solar_daily["key"] =  list_values3
-    
+
     #merge historic hourly data and historic averaged data
     solar_norm = solar_hist.merge(solar_day_av,how='left',on="key",suffixes=('_h','_d'))
-    
+
     #normalise hourly values
     solar_norm["value"] = solar_norm["value_h"]/solar_norm["value_d"]  # normalised value = (hourly value)/(daily mean)
 
@@ -105,7 +105,7 @@ def read_data(hist_year, current_timestep, scenario):
     solar_insolation.drop(["day_h","key","rsds",],axis = 1, inplace=True)
     solar_insolation.rename(columns={"timestep":"year", "yearday":"day"}, inplace=True)
 
-        
+
     # input_parameter names based on historic data year and weather scenario
     wind_param = "wind_"+str(hist_year)+"_"+scenario # ex : "wind_2010_NF1"
     insolation_param = "insolation_"+str(hist_year)+"_"+scenario     # ex : "insolation_2010_NF1"
@@ -119,13 +119,13 @@ def read_data(hist_year, current_timestep, scenario):
 
     wind_speed = wind_speed[col_order]
     solar_insolation = solar_insolation[col_order]
-    
+
     return (wind_speed,solar_insolation)
 
 
 def write_data(input_parameters,wind_speed,solar_insolation):
     #write input parameters to input_parameters table
-    
+
     #convert the yearly data to match seasonal_weeks
 
     #write the converted data to input_timestep table
