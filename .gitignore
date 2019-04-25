@@ -105,3 +105,6 @@ venv.bak/
 
 # editors
 .vscode
+
+# data
+src/ukweather/cache/*
