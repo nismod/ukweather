@@ -14,25 +14,17 @@ import os
 import numpy as np
 import pandas as pd
 
-hist_year = 2010
-current_timestep = 2020 #how to get this ?
-scenario = 'NF1'
 
-def read_data(hist_year, current_timestep, scenario):
-
-    #path to files
-    hist_data =  'C:\\Users\Lahiru Jayasuriya\\Desktop\\NISMOD\\nismod2\\data\\energy_supply\\scenarios'
-    weather_data = 'C:\\Users\\Lahiru Jayasuriya\\Desktop\\NISMOD\\nismod2\\data\\scenarios\\climate'
-
+def read_data(historical_data_dir, future_data_dir, hist_year, current_timestep, scenario):
     #files
     file_wind = "wss__"+scenario+".csv"
     file_solar = "rsds__"+scenario+".csv"
     file_historic = "weather_hist_hourly_"+str(hist_year)+".csv"
 
     #main data frames - historic all and daily all (includes all years)
-    weather_hist = pd.read_csv(hist_data+os.path.sep+file_historic)
-    wind_daily_all = pd.read_csv(weather_data+os.path.sep+file_wind)
-    solar_daily_all = pd.read_csv(weather_data+os.path.sep+file_solar)
+    weather_hist = pd.read_csv(historical_data_dir+os.path.sep+file_historic)
+    wind_daily_all = pd.read_csv(future_data_dir+os.path.sep+file_wind)
+    solar_daily_all = pd.read_csv(future_data_dir+os.path.sep+file_solar)
 
     #historic wind and solar
     wind_hist = weather_hist[weather_hist.parameter == 'wind']
