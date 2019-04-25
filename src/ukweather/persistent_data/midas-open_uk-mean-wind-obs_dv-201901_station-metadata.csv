@@ -1,0 +1,681 @@
+Conventions,G,BADC-CSV,1
+title,G,Midas-open: Station site metadata for uk-mean-wind-obs
+source,G,Met Office MIDAS database
+creator,G,Met Office
+activity,G,Met Office MIDAS Open: UK Land Surface Stations Data
+feature_type,G,point collection
+observation_station,G,UK land surface observing network
+location,G,UK
+collection_name,G,midas-open
+collection_version_number,G,dataset-version-201901
+date_valid,G,2019-01-29
+history,G,Created 2019-01-29
+last_revised_date,G,2019-01-29
+comments,G,This file contains geographic and temporal information for the stations covered in this version of the uk-mean-wind-obs part of the MIDAS-open collection
+comments,G,The temporal range given here is in relation to the data temporal range available for this station within this dataset and may differ from other dates for the given station in other MIDAS-open datasets
+comments,G,The geographic location relates to the currently recorded station location to 3 decimal places of latitude and longitude
+comments,G,If more precise geographical location information is required please contact the Met Office directly as there may be data management restrictions for stations located on private property
+comments,G,Further station-specific details are given in each station folder in the associated capability files
+comments,G,For fuller station metadata please use the MIDAS station search tool available from the Centre for Environmental Data Analysis
+coordinate_variable,src_id,x
+long_name,src_id,The unique MIDAS identifier for the station,1
+type,src_id,int
+comments,src_id,This is a unique ID ascribed to this station within the MIDAS system. It is used across MIDAS as a way to join related data and metadata together where a site may have used different identifiers for different meteorological reports over time.
+long_name,station_name,The name for this station,1
+type,station_name,char
+long_name,station_file_name,The filename used for this station,1
+type,station_file_name,char
+comments,station_file_name,The filename is derived from the station name but replacing spaces with - as necessary
+long_name,historic_county,the historic county this station is within,1
+type,historic_county,char
+comments,historic_county,Within MIDAS stations are associated with a set of fixed historic county definitions for the UK and are not amended to reflect modern county boundary changes. For more details refer to the MIDAS documentation.
+long_name,station_latitude,The station latitude (WGS84),degrees
+type,station_latitude,float
+long_name,station_longitude,The station longitude (WGS84),degrees
+type,station_longitude,float
+long_name,station_elevation,The station elevation,m
+type,station_elevation,float
+comments,station_elevation,The station elevation in metres above mean sea level
+long_name,first_year,first year of data associated with this station in this dataset,year
+type,first_year,float
+comments,first_year,This relates to the first year of available data within this version of this dataset. The first year may differ for this station within other datasets of Midas-open
+long_name,last_year,last year of data associated with this station in this dataset,year
+type,last_year,float
+comments,last_year,This relates to the last year of data associated with this station in this dataset. It does not indicate whether the station is currently operational and the last year may differ for this station within other datasets of Midas-open
+comments,last_year,The first and last year indicate simply the year of first and last available data in this dataset. They do not indicate the availability of data between those dates or availability of data within other datasets of Midas-open
+data
+src_id,station_name,station_file_name,historic_county,station_latitude,station_longitude,station_elevation,first_year,last_year
+00002,FOULA NO 2,foula-no-2,shetland,60.11,-2.065,22,1997,2014
+00003,FAIR ISLE,fair-isle,shetland,59.526,-1.63,57,1983,2017
+00004,SUMBURGH,sumburgh,shetland,59.879,-1.299,7,1971,1997
+00005,HAMNAVOE,hamnavoe,shetland,60.104,-1.333,21,1962,1971
+00009,LERWICK,lerwick,shetland,60.139,-1.185,82,1957,2017
+00010,SELLA NESS,sella-ness,shetland,60.447,-1.278,7,1979,2017
+00011,MUCKLE HOLM,muckle-holm,shetland,60.581,-1.266,20,1997,2004
+00012,BALTASOUND NO 2,baltasound-no-2,shetland,60.748,-0.856,15,1992,2017
+00013,BALTASOUND,baltasound,shetland,60.759,-0.888,24,1988,1988
+00015,SAXA VORD,saxa-vord,shetland,60.828,-0.841,284,1971,1973
+00016,NORTH RONA ISLAND,north-rona-island,orkney,59.124,-5.827,98,1997,2009
+00017,SULE SKERRY,sule-skerry,orkney,59.082,-4.405,12,1997,2017
+00023,KIRKWALL,kirkwall,orkney,58.953,-2.901,26,1957,2017
+00026,DOUNREAY,dounreay,caithness,58.579,-3.739,21,1969,1983
+00030,SCRABSTER HARBOUR,scrabster-harbour,caithness,58.612,-3.547,10,2001,2001
+00032,WICK AIRPORT,wick-airport,caithness,58.454,-3.09,36,1957,2017
+00035,GEISGEIL,geisgeil,sutherland,58.319,-5.126,12,1978,1980
+00036,DUARTMORE BRIDGE,duartmore-bridge,sutherland,58.289,-5.072,30,1980,2000
+00037,CAPE WRATH,cape-wrath,sutherland,58.625,-5.0,112,1997,1997
+00040,CASSLEY,cassley,sutherland,58.168,-4.727,99,1997,1997
+00043,LAIRG NO 2,lairg-no-2,sutherland,58.019,-4.407,91,1993,1993
+00044,ALTNAHARRA NO 2,altnaharra-no-2,sutherland,58.288,-4.442,81,1993,2017
+00045,TORRISDALE,torrisdale,sutherland,58.523,-4.273,27,1980,1991
+00048,"KINBRACE, HATCHERY",kinbrace-hatchery,sutherland,58.23,-3.922,103,1979,2017
+00050,STRATHY EAST,strathy-east,sutherland,58.561,-3.992,68,1998,1998
+00052,AULTBEA NO 2,aultbea-no-2,ross-and-cromarty,57.859,-5.633,11,1991,2017
+00054,STORNOWAY AIRPORT,stornoway-airport,western-isles,58.213,-6.319,15,1957,2017
+00055,BUTT OF LEWIS,butt-of-lewis,western-isles,58.516,-6.262,16,1994,1998
+00058,DIABAIG,diabaig,ross-and-cromarty,57.579,-5.692,60,1978,1991
+00063,INVERPOLLY,inverpolly,ross-and-cromarty,58.068,-5.267,14,1992,1997
+00064,PLOCKTON,plockton,ross-and-cromarty,57.337,-5.653,12,1999,1999
+00067,LOCH GLASCARNOCH,loch-glascarnoch,ross-and-cromarty,57.725,-4.895,269,1993,2017
+00074,DINGWALL,dingwall,ross-and-cromarty,57.6,-4.447,7,1998,1999
+00077,INVERGORDON HARBOUR,invergordon-harbour,ross-and-cromarty,57.687,-4.167,3,1984,2001
+00078,INVERGORDON,invergordon,ross-and-cromarty,57.703,-4.158,15,1979,1981
+00079,TAIN RANGE,tain-range,ross-and-cromarty,57.819,-3.967,4,1992,2017
+00082,BARRA (W I),barra-w-i,western-isles,57.025,-7.449,3,1997,2007
+00083,LOCHBOISDALE,lochboisdale,western-isles,57.155,-7.316,6,2001,2001
+00084,BENBECULA AIRPORT,benbecula-airport,western-isles,57.475,-7.371,6,1957,1996
+00089,RHUM: KINLOCH,rhum-kinloch,inverness-shire,57.014,-6.282,5,1964,1964
+00090,SKYE: PRABOST,skye-prabost,inverness-shire,57.467,-6.305,67,1959,1989
+00092,INVERAILORT,inverailort,inverness-shire,56.872,-5.67,2,1987,1998
+00096,ONICH,onich,inverness-shire,56.72,-5.224,15,1992,1992
+00101,CORPACH,corpach,inverness-shire,56.839,-5.149,8,1969,1980
+00102,KILTARLITY,kiltarlity,inverness-shire,57.427,-4.497,75,1999,1999
+00103,AONACH MOR,aonach-mor,inverness-shire,56.822,-4.969,1130,1992,2017
+00105,TULLOCH BRIDGE,tulloch-bridge,inverness-shire,56.867,-4.708,249,1991,2017
+00106,FORT AUGUSTUS NO 2,fort-augustus-no-2,inverness-shire,57.138,-4.718,42,1969,1989
+00110,LENTRAN,lentran,inverness-shire,57.459,-4.373,146,1985,1994
+00111,DALWHINNIE NO 2,dalwhinnie-no-2,inverness-shire,56.94,-4.238,351,1978,2001
+00113,AVIEMORE,aviemore,inverness-shire,57.206,-3.828,228,1983,2017
+00116,DALCROSS,dalcross,inverness-shire,57.542,-4.062,11,1969,1994
+00117,CAIRNGORM SUMMIT,cairngorm-summit,inverness-shire,57.116,-3.643,1237,1992,2017
+00120,CAIRNGORM,cairngorm,inverness-shire,57.124,-3.645,1090,1969,2001
+00126,NAIRN,nairn,nairnshire,57.587,-3.893,8,1991,1991
+00127,FORRES NO 2,forres-no-2,moray-in-grampian-region,57.615,-3.61,5,1996,1996
+00128,"GRANTOWN-ON-SPEY, GRAMMAR SCHOOL",grantown-on-spey-grammar-school,moray-in-highland-region,57.334,-3.6,218,1996,1996
+00130,GRANTOWN-ON-SPEY,grantown-on-spey,moray-in-highland-region,57.335,-3.606,220,1984,1984
+00132,KINLOSS,kinloss,moray-in-grampian-region,57.645,-3.563,5,1959,2017
+00133,ALDROUGHTY,aldroughty,moray-in-grampian-region,57.645,-3.379,30,1985,2000
+00137,LOSSIEMOUTH,lossiemouth,moray-in-grampian-region,57.711,-3.323,7,1969,2017
+00139,CLASHNOIR,clashnoir,banffshire,57.282,-3.287,338,1977,1981
+00141,KEITH,keith,banffshire,57.553,-2.949,106,1978,1995
+00145,CAIRNWELL,cairnwell,aberdeenshire,56.879,-3.421,928,1994,2017
+00148,BALMORAL,balmoral,aberdeenshire,57.037,-3.22,283,1990,1990
+00149,BALLATER FIELD CENTRE,ballater-field-centre,aberdeenshire,57.047,-3.043,200,1998,1998
+00150,ABOYNE NO 2,aboyne-no-2,aberdeenshire,57.076,-2.841,140,1992,2017
+00151,DINNET,dinnet,aberdeenshire,57.109,-2.916,177,1981,1982
+00156,GARTLY,gartly,aberdeenshire,57.379,-2.795,146,1982,1982
+00160,CRAIBSTONE,craibstone,aberdeenshire,57.187,-2.215,102,1975,1975
+00161,DYCE,dyce,aberdeenshire,57.205,-2.205,65,1957,2017
+00163,"ABERDEEN, MANNOFIELD RESR",aberdeen-mannofield-resr,aberdeenshire,57.128,-2.14,52,2007,2007
+00166,FRASERBURGH,fraserburgh,aberdeenshire,57.697,-2.003,18,1969,1990
+00167,CULTERTY NO 2,culterty-no-2,aberdeenshire,57.325,-2.003,3,1995,1999
+00170,PETERHEAD HARBOUR,peterhead-harbour,aberdeenshire,57.502,-1.774,15,1979,2017
+00176,DURRIS,durris,kincardineshire,57.032,-2.404,107,1995,1998
+00177,INVERBERVIE NO 2,inverbervie-no-2,kincardineshire,56.852,-2.266,134,1992,2017
+00181,MYLNEFIELD,mylnefield,angus,56.457,-3.073,31,1959,2001
+00183,DUNDEE,dundee,angus,56.47,-2.94,45,1984,1984
+00185,FORFAR NO 3,forfar-no-3,angus,56.683,-2.929,91,1986,1994
+00186,FORFAR NO 2,forfar-no-2,angus,56.657,-2.775,67,1981,1983
+00187,WHITEHILLOCKS,whitehillocks,angus,56.906,-2.907,258,2010,2010
+00190,BELL ROCK,bell-rock,angus,56.436,-2.386,39,1969,1987
+00193,MONTROSE,montrose,angus,56.746,-2.481,55,1987,1987
+00194,CRIANLARICH,crianlarich,perthshire-in-central-region,56.419,-4.659,174,1975,1975
+00195,TYNDRUM NO 3,tyndrum-no-3,perthshire-in-central-region,56.419,-4.661,168,1998,1998
+00201,BALQUHIDDER NO 2,balquhidder-no-2,perthshire-in-central-region,56.355,-4.397,136,1982,1992
+00205,ARDTALNAIG,ardtalnaig,perthshire-in-tayside-region,56.528,-4.112,130,1971,2001
+00208,DRUMMOND CASTLE,drummond-castle,perthshire-in-tayside-region,56.338,-3.877,113,1970,2001
+00209,TUMMEL BRIDGE,tummel-bridge,perthshire-in-tayside-region,56.706,-4.011,148,1969,1992
+00212,STRATHALLAN AIRFIELD,strathallan-airfield,perthshire-in-tayside-region,56.326,-3.729,35,1992,2017
+00214,FASKALLY,faskally,perthshire-in-tayside-region,56.718,-3.77,94,1987,1987
+00221,PERTH,perth,perthshire-in-tayside-region,56.399,-3.458,23,1979,1979
+00223,PERTH AERODROME,perth-aerodrome,perthshire-in-tayside-region,56.437,-3.372,118,1982,1996
+00226,KINROSS,kinross,kinross-shire,56.214,-3.413,116,1995,2001
+00235,LEUCHARS,leuchars,fife,56.377,-2.862,10,1957,2017
+00237,BELLISTON,belliston,fife,56.239,-2.796,82,1979,2001
+00239,FIFE NESS,fife-ness,fife,56.279,-2.586,12,1997,2000
+00240,BLACKBURN S WKS,blackburn-s-wks,west-lothian-in-lothian-region,55.872,-3.589,131,1975,1978
+00246,TURNHOUSE,turnhouse,midlothian-in-lothian-region,55.951,-3.348,35,1957,1999
+00247,"EDINBURGH, EAST CRAIGS",edinburgh-east-craigs,midlothian-in-lothian-region,55.948,-3.307,61,1959,2001
+00250,BUSH HOUSE,bush-house,midlothian-in-lothian-region,55.86,-3.208,184,1962,1999
+00251,"EDINBURGH, BLACKFORD HILL",edinburgh-blackford-hill,midlothian-in-lothian-region,55.923,-3.191,134,1976,2015
+00262,NUNRAW ABBEY,nunraw-abbey,east-lothian,55.921,-2.652,197,1979,2001
+00263,HADDINGTON,haddington,east-lothian,55.96,-2.751,41,1989,1999
+00264,DUNBAR,dunbar,east-lothian,56.004,-2.528,23,1967,2001
+00265,MERTOUN,mertoun,berwickshire,55.581,-2.562,69,1961,1969
+00267,BLYTHE,blythe,berwickshire,55.737,-2.662,262,1999,1999
+00268,CHARTERHALL,charterhall,berwickshire,55.709,-2.385,112,1987,2017
+00273,STANHOPE FARM,stanhope-farm,peebleshire,55.552,-3.392,226,1959,1988
+00274,BLYTH BRIDGE,blyth-bridge,peebleshire,55.703,-3.368,253,1992,1999
+00275,WEST LINTON,west-linton,peebleshire,55.754,-3.356,244,1982,1982
+00279,BOWHILL,bowhill,selkirkshire,55.541,-2.906,168,1989,1989
+00284,GREYCROOK,greycrook,roxburghshire,55.567,-2.637,76,1975,2001
+00285,CARTERHOUSE,carterhouse,roxburghshire,55.358,-2.519,308,1997,1997
+00286,FLOORS CASTLE,floors-castle,roxburghshire,55.603,-2.468,59,1995,1995
+00288,SOURHOPE,sourhope,roxburghshire,55.475,-2.247,221,1996,2001
+00293,REDESDALE,redesdale,northumberland,55.253,-2.263,235,1994,2001
+00300,WALLINGTON,wallington,northumberland,55.154,-1.945,150,1995,1995
+00307,NEWCASTLE WEATHER CENTRE,newcastle-weather-centre,tyne-and-wear,54.977,-1.598,52,1978,2005
+00315,BOULMER,boulmer,northumberland,55.421,-1.601,23,1975,2017
+00317,BURNHOPE,burnhope,durham,54.821,-1.715,238,1986,2000
+00322,LOW ETHERLEY,low-etherley,durham,54.655,-1.74,162,1994,1994
+00326,DURHAM,durham,durham,54.768,-1.586,102,1970,2009
+00330,SOUTH SHIELDS,south-shields,tyne-and-wear,55.003,-1.418,5,1970,1992
+00339,BAINBRIDGE,bainbridge,north-yorkshire,54.308,-2.101,210,1996,1996
+00341,WYCLIFFE HALL,wycliffe-hall,north-yorkshire,54.521,-1.818,120,1997,1997
+00342,DISHFORTH AIRFIELD,dishforth-airfield,north-yorkshire,54.135,-1.415,33,1993,2016
+00346,LINTON ON OUSE,linton-on-ouse,north-yorkshire,54.045,-1.251,14,1974,2017
+00352,SOUTH GARE,south-gare,cleveland,54.647,-1.138,8,1974,1984
+00357,WYKEHAM FOREST,wykeham-forest,north-yorkshire,54.281,-0.568,214,1992,1992
+00358,FYLINGDALES,fylingdales,north-yorkshire,54.359,-0.672,262,1987,2017
+00359,WHITBY,whitby,north-yorkshire,54.481,-0.626,41,1996,1996
+00360,SCARBOROUGH,scarborough,north-yorkshire,54.273,-0.423,110,1992,1992
+00363,SILPHO MOOR,silpho-moor,north-yorkshire,54.338,-0.53,203,1970,1986
+00367,HIGH MOWTHORPE,high-mowthorpe,north-yorkshire,54.105,-0.643,175,1994,2001
+00369,HULL,hull,humberside,53.756,-0.358,2,2008,2008
+00370,LECONFIELD,leconfield,humberside,53.875,-0.442,7,1959,2017
+00373,BRIDLINGTON MRSC,bridlington-mrsc,humberside,54.094,-0.176,15,1990,2017
+00376,KILNSEA,kilnsea,humberside,53.622,0.141,12,1957,1968
+00377,SPURN POINT,spurn-point,humberside,53.575,0.111,6,1977,1994
+00379,COWDEN,cowden,humberside,53.844,-0.103,15,1995,1998
+00381,SCAMPTON,scampton,lincolnshire,53.307,-0.548,57,1974,2017
+00384,WADDINGTON,waddington,lincolnshire,53.175,-0.523,68,1969,2017
+00386,CRANWELL,cranwell,lincolnshire,53.031,-0.504,63,1971,2017
+00392,"KIRTON, HORTICULTURE",kirton-horticulture,lincolnshire,52.937,-0.068,4,1994,2001
+00393,CONINGSBY,coningsby,lincolnshire,53.094,-0.173,6,1969,2017
+00394,BINBROOK,binbrook,lincolnshire,53.445,-0.202,108,1966,1988
+00395,HOLBEACH NO 2,holbeach-no-2,lincolnshire,52.873,0.139,3,1992,2017
+00396,DRIBY,driby,lincolnshire,53.249,0.077,41,1994,1998
+00399,"CLEETHORPES, HAVERSTOE PARK",cleethorpes-haverstoe-park,humberside,53.55,-0.03,7,2003,2004
+00401,MANBY,manby,lincolnshire,53.361,0.097,13,1957,1974
+00403,SKEGNESS,skegness,lincolnshire,53.148,0.346,6,1998,1998
+00404,LINCOLN (CANWICK),lincoln-canwick,lincolnshire,53.222,-0.505,7,1995,1995
+00405,DONNA NOOK NO 2,donna-nook-no-2,lincolnshire,53.475,0.153,8,1993,2017
+00406,TERRINGTON ST CLEMENT,terrington-st-clement,norfolk,52.745,0.288,2,1994,2001
+00407,DENVER,denver,norfolk,52.583,0.346,3,1994,2001
+00408,NORWICH WEATHER CENTRE,norwich-weather-centre,norfolk,52.626,1.298,35,1992,2000
+00409,MARHAM,marham,norfolk,52.651,0.566,21,1969,2017
+00413,SANTON DOWNHAM,santon-downham,suffolk,52.459,0.671,6,1988,2001
+00415,WEST RAYNHAM,west-raynham,norfolk,52.786,0.737,73,1967,1976
+00416,SCULTHORPE,sculthorpe,norfolk,52.851,0.755,65,1978,1979
+00417,BRESSINGHAM,bressingham,norfolk,52.387,1.052,35,1988,1988
+00421,WEYBOURNE,weybourne,norfolk,52.949,1.122,21,1992,2017
+00429,COLTISHALL,coltishall,norfolk,52.757,1.351,17,1962,2006
+00432,GORLESTON,gorleston,norfolk,52.572,1.738,4,1957,2016
+00433,HEMSBY,hemsby,norfolk,52.686,1.687,13,1978,2001
+00434,MILDENHALL,mildenhall,suffolk,52.372,0.471,5,1949,1969
+00435,BROOMS BARN,brooms-barn,suffolk,52.261,0.566,75,1994,2001
+00436,CAVENDISH,cavendish,suffolk,52.091,0.628,55,1994,2001
+00438,HONINGTON,honington,suffolk,52.34,0.77,51,1969,2003
+00439,EAST BERGHOLT,east-bergholt,suffolk,51.96,1.023,7,1998,1998
+00440,WATTISHAM,wattisham,suffolk,52.124,0.957,89,1969,2017
+00443,FELIXSTOWE,felixstowe,suffolk,51.947,1.325,3,1957,1961
+00451,"BOXWORTH, SAMSON FIELD",boxworth-samson-field,cambridgeshire,52.251,-0.033,53,1994,2001
+00452,MEPAL,mepal,cambridgeshire,52.422,0.1,-2,1994,2001
+00453,MARCH,march,cambridgeshire,52.55,0.093,2,1998,1998
+00454,"CAMBRIDGE, BOTANIC GARDEN",cambridge-botanic-garden,cambridgeshire,52.194,0.129,13,1994,2001
+00455,"CAMBRIDGE, NIAB",cambridge-niab,cambridgeshire,52.245,0.1,26,1994,2001
+00456,MONKS WOOD,monks-wood,cambridgeshire,52.402,-0.237,41,1994,2017
+00457,WYTON,wyton,cambridgeshire,52.354,-0.116,40,1976,1995
+00458,WOBURN,woburn,bedfordshire,52.014,-0.596,89,1994,2005
+00461,BEDFORD,bedford,bedfordshire,52.227,-0.465,85,1970,2017
+00464,SILSOE,silsoe,bedfordshire,52.01,-0.41,59,1994,1999
+00465,CARDINGTON,cardington,bedfordshire,52.104,-0.423,29,1957,1987
+16851,MORECAMBE NO 2,morecambe-no-2,lancashire,54.076,-2.86,7,1994,1994
+00470,"GARSTON, BUILDING RESEARCH ",garston-building-research,hertfordshire,51.702,-0.376,78,1969,1982
+00471,ROTHAMSTED,rothamsted,hertfordshire,51.807,-0.36,128,1969,2001
+00481,HIGH BEACH,high-beach,essex,51.664,0.041,110,1997,1998
+00484,STANSTED,stansted,essex,51.881,0.223,101,1959,1997
+00487,WRITTLE,writtle,essex,51.734,0.429,32,1994,2001
+00489,CORYTON,coryton,essex,51.513,0.515,3,1969,1971
+00496,"SOUTHEND, SOUTHCHURCH PARK",southend-southchurch-park,essex,51.532,0.738,4,1998,1998
+00497,SHOEBURYNESS,shoeburyness,essex,51.537,0.807,2,1957,1981
+00498,"SHOEBURYNESS, LANDWICK",shoeburyness-landwick,essex,51.555,0.827,2,1981,2017
+00501,THAMES TOWER,thames-tower,essex,51.774,1.111,8,1997,1999
+00504,WALTON-ON-THE-NAZE,walton-on-the-naze,essex,51.855,1.28,5,1990,2015
+00507,SLAIDBURN,slaidburn,lancashire,53.988,-2.435,192,1994,1996
+00509,MALHAM TARN,malham-tarn,north-yorkshire,54.1,-2.164,381,1982,1995
+00513,"BINGLEY, NO 2",bingley-no-2,west-yorkshire,53.811,-1.867,262,1972,2017
+00521,EMLEY MOOR,emley-moor,west-yorkshire,53.613,-1.665,259,1997,2010
+00523,LEEDS WEATHER CENTRE,leeds-weather-centre,west-yorkshire,53.801,-1.561,64,1987,2003
+00525,SHEFFIELD,sheffield,south-yorkshire,53.381,-1.491,131,1959,1985
+00527,HIGH BRADFIELD,high-bradfield,south-yorkshire,53.433,-1.584,395,1975,2017
+00533,CHURCH FENTON,church-fenton,north-yorkshire,53.836,-1.199,8,1969,2013
+00534,BRAMHAM,bramham,west-yorkshire,53.869,-1.319,54,1994,2017
+00535,CAWOOD,cawood,north-yorkshire,53.828,-1.148,6,1994,2001
+00536,ASKHAM BRYAN,askham-bryan,north-yorkshire,53.923,-1.163,32,1994,2001
+00538,SKIPTON NO 2,skipton-no-2,north-yorkshire,53.967,-2.03,153,1997,1998
+00545,BARBROOK,barbrook,derbyshire,53.288,-1.579,323,1978,1979
+00549,ASHOVER NO 2,ashover-no-2,derbyshire,53.163,-1.48,178,1996,1996
+00554,SUTTON BONINGTON,sutton-bonington,nottinghamshire,52.836,-1.251,43,1994,2017
+00556,"NOTTINGHAM, WATNALL",nottingham-watnall,nottinghamshire,53.006,-1.251,117,1957,2017
+00559,NOTTINGHAM,nottingham,nottinghamshire,52.95,-1.155,59,1982,1982
+00561,WARSOP,warsop,nottinghamshire,53.223,-1.116,46,1994,2001
+00562,FINNINGLEY,finningley,south-yorkshire,53.483,-1.008,10,1958,1995
+00564,SOUTHWELL,southwell,nottinghamshire,53.064,-0.963,70,1990,1993
+00565,WEST RETFORD,west-retford,nottinghamshire,53.338,-0.956,14,1994,1998
+00566,WISETON,wiseton,nottinghamshire,53.396,-0.932,6,1994,1995
+00567,CLARBOROUGH,clarborough,nottinghamshire,53.341,-0.901,21,1987,1993
+00569,NEWTOWN LINFORD,newtown-linford,leicestershire,52.681,-1.217,119,1994,2001
+00574,BROOKSBY HALL NO 2,brooksby-hall-no-2,leicestershire,52.732,-0.996,70,1994,1996
+00575,CALDECOTT P STA,caldecott-p-sta,leicestershire,52.53,-0.727,53,1994,1994
+00576,COTTESMORE,cottesmore,leicestershire,52.727,-0.656,136,1988,2011
+00583,WITTERING,wittering,cambridgeshire,52.612,-0.468,74,1957,2017
+00589,LUDDINGTON,luddington,warwickshire,52.173,-1.757,56,1983,1988
+00593,ELMDON,elmdon,west-midlands,52.453,-1.742,96,1949,1999
+00595,CHURCH LAWFORD,church-lawford,warwickshire,52.359,-1.331,107,1992,2017
+00596,WELLESBOURNE,wellesbourne,warwickshire,52.206,-1.605,47,1994,2001
+00604,RUGBY,rugby,warwickshire,52.37,-1.257,117,1969,1994
+00605,BRIZE NORTON,brize-norton,oxfordshire,51.758,-1.578,82,1968,2017
+00606,OXFORD,oxford,oxfordshire,51.761,-1.264,63,1971,2005
+00613,BENSON,benson,oxfordshire,51.62,-1.099,57,1974,2017
+00616,GRENDON UNDERWOOD,grendon-underwood,buckinghamshire,51.889,-1.016,67,1998,1998
+00617,AMERSHAM NO 2,amersham-no-2,buckinghamshire,51.668,-0.592,137,1981,1998
+00620,CHENIES NO 2,chenies-no-2,buckinghamshire,51.69,-0.534,139,1992,1998
+00622,KEELE,keele,staffordshire,52.999,-2.27,179,1970,2000
+00626,PENKRIDGE,penkridge,staffordshire,52.702,-2.12,101,1994,1999
+00627,CELLARHEAD,cellarhead,staffordshire,53.04,-2.085,228,1977,1997
+00635,OSWESTRY SCHOOL,oswestry-school,shropshire,52.856,-3.063,139,1999,1999
+00638,PRESTON MONTFORD,preston-montford,shropshire,52.725,-2.842,71,1994,2008
+00642,LUDLOW W WKS,ludlow-w-wks,shropshire,52.355,-2.712,72,1979,1981
+00643,SHAWBURY,shawbury,shropshire,52.795,-2.665,72,1980,2017
+00651,NEWPORT (SALOP),newport-salop,shropshire,52.778,-2.428,66,1994,1998
+00657,PERSHORE,pershore,hereford-and-worcester,52.148,-2.041,35,1957,2017
+00658,PERSHORE COLLEGE,pershore-college,hereford-and-worcester,52.1,-2.06,37,1994,1997
+00660,ASTWOOD BANK,astwood-bank,hereford-and-worcester,52.248,-1.935,137,1994,1994
+00663,HALESOWEN,halesowen,west-midlands,52.438,-2.076,153,1980,2001
+00668,"BROMYARD, BATCHLEY FARM",bromyard-batchley-farm,hereford-and-worcester,52.214,-2.587,250,1994,2001
+00669,SHOBDON AIRFIELD,shobdon-airfield,hereford-and-worcester,52.243,-2.886,99,1992,2017
+00670,GREAT MALVERN,great-malvern,hereford-and-worcester,52.121,-2.306,44,1997,2008
+00671,ROSS-ON-WYE,ross-on-wye,hereford-and-worcester,51.911,-2.586,67,1970,2017
+00672,"WORCESTER, CORNMEADOW",worcester-cornmeadow,hereford-and-worcester,52.224,-2.225,30,1983,1986
+00673,PRESTON WYNNE,preston-wynne,hereford-and-worcester,52.125,-2.638,84,1994,2008
+00674,AVONMOUTH,avonmouth,avon,51.506,-2.717,9,1970,2017
+00675,BRISTOL WEATHER CENTRE,bristol-weather-centre,avon,51.453,-2.6,42,1981,2001
+00676,FILTON,filton,avon,51.522,-2.577,59,2001,2017
+00680,SLIMBRIDGE,slimbridge,gloucestershire,51.74,-2.404,5,1996,1996
+00686,INNSWORTH,innsworth,gloucestershire,51.891,-2.196,21,1977,1981
+00688,CIRENCESTER,cirencester,gloucestershire,51.709,-1.996,133,1994,2001
+00689,FAIRFORD AIRFIELD,fairford-airfield,gloucestershire,51.69,-1.773,82,1970,1977
+00691,WESTONBIRT,westonbirt,gloucestershire,51.607,-2.221,135,1994,1999
+00692,LITTLE RISSINGTON,little-rissington,gloucestershire,51.861,-1.693,210,1974,2017
+00706,BLACKWALL,blackwall,greater-london,51.508,0.007,5,1976,1978
+00708,HEATHROW,heathrow,greater-london,51.479,-0.451,25,1949,2017
+00709,NORTHOLT,northolt,greater-london,51.549,-0.417,33,1979,2017
+00711,HAMPTON W WKS,hampton-w-wks,greater-london,51.412,-0.378,12,1969,1976
+00718,MERRIST WOOD,merrist-wood,surrey,51.274,-0.618,51,1994,1997
+00719,WISLEY,wisley,surrey,51.311,-0.476,38,1994,2017
+00720,MICKLEHAM,mickleham,surrey,51.261,-0.321,55,1998,1998
+00721,KEW,kew,greater-london,51.468,-0.316,5,1957,1981
+00723,KEW GARDENS,kew-gardens,greater-london,51.482,-0.294,6,1981,2017
+00725,GATWICK,gatwick,west-sussex,51.152,-0.193,59,1958,1998
+00726,KENLEY AIRFIELD,kenley-airfield,greater-london,51.304,-0.092,170,1991,2017
+00738,HADLOW COLLEGE,hadlow-college,kent,51.223,0.33,27,1994,1994
+00741,GRAVESEND NO 2,gravesend-no-2,kent,51.445,0.374,20,1980,1995
+00743,LANGDON BAY,langdon-bay,kent,51.134,1.343,117,1985,2017
+00744,EAST MALLING,east-malling,kent,51.288,0.448,33,1978,2017
+00752,SHEERNESS,sheerness,kent,51.447,0.744,25,1989,2008
+00753,ISLE OF GRAIN,isle-of-grain,kent,51.442,0.703,3,1969,1985
+00755,LYDD RANGES,lydd-ranges,kent,50.937,0.889,1,1986,1992
+00757,FAVERSHAM,faversham,kent,51.297,0.878,46,1998,2001
+00758,DUNGENESS,dungeness,kent,50.913,0.972,6,1957,1986
+00759,LYDD-ASHFORD AIRPORT,lydd-ashford-airport,kent,50.959,0.94,13,1993,1997
+00760,WYE,wye,kent,51.185,0.945,56,1994,2001
+00764,FOLKESTONE TML,folkestone-tml,kent,51.09,1.119,67,1989,1996
+00765,HERNE BAY NO 2,herne-bay-no-2,kent,51.358,1.135,40,1994,2006
+00770,DOVER,dover,kent,51.121,1.314,6,1969,1971
+00771,DOVER NO 2,dover-no-2,kent,51.121,1.342,6,1976,1985
+00774,DEAL,deal,kent,51.232,1.403,2,1958,1962
+00775,MANSTON,manston,kent,51.347,1.335,49,1961,2017
+00779,THORNEY ISLAND,thorney-island,west-sussex,50.815,-0.922,4,1957,2017
+00782,BOGNOR REGIS,bognor-regis,west-sussex,50.782,-0.677,7,1994,1995
+00787,RUSTINGTON,rustington,west-sussex,50.821,-0.518,3,1994,1995
+00794,SHOREHAM-BY-SEA,shoreham-by-sea,west-sussex,50.827,-0.249,15,1980,1992
+00795,SHOREHAM AIRPORT,shoreham-airport,west-sussex,50.836,-0.293,2,1997,2017
+00798,BRIGHTON MARINA,brighton-marina,east-sussex,50.814,-0.108,3,1973,1978
+00799,NEWHAVEN,newhaven,east-sussex,50.782,0.057,5,1997,2000
+00803,PLUMPTON,plumpton,east-sussex,50.906,-0.071,76,1969,2001
+00808,EASTBOURNE,eastbourne,east-sussex,50.759,0.283,15,1994,2001
+00810,HERSTMONCEUX,herstmonceux,east-sussex,50.865,0.336,18,1983,1992
+00811,"HERSTMONCEUX, WEST END",herstmonceux-west-end,east-sussex,50.891,0.317,52,1993,2017
+00812,BEXHILL,bexhill,east-sussex,50.838,0.464,4,1994,2000
+00816,BREDE,brede,east-sussex,50.939,0.593,82,1999,2000
+00818,HASTINGS,hastings,east-sussex,50.856,0.57,45,1994,2001
+00819,LAMBOURN,lambourn,berkshire,51.533,-1.49,192,1994,1996
+00822,ABINGDON,abingdon,oxfordshire,51.689,-1.308,69,1957,1976
+00825,WALLINGFORD,wallingford,oxfordshire,51.603,-1.113,47,1994,2001
+00830,"READING UNIVERSITY, WHITEKNIGHTS",reading-university-whiteknights,berkshire,51.441,-0.938,66,1994,2001
+00838,"BRACKNELL, BEAUFORT PARK",bracknell-beaufort-park,berkshire,51.39,-0.786,74,1991,2003
+00842,HURN,hurn,dorset,50.779,-1.836,10,1957,2017
+00843,"BOURNEMOUTH, KINGS PARK",bournemouth-kings-park,dorset,50.734,-1.824,27,1995,1995
+00844,IBSLEY,ibsley,hampshire,50.884,-1.772,27,1995,1995
+00846,EVERTON,everton,hampshire,50.742,-1.575,16,1994,2001
+00847,MIDDLE WALLOP,middle-wallop,hampshire,51.15,-1.57,90,1973,2017
+00850,SOUTHAMPTON,southampton,hampshire,50.901,-1.404,19,1992,2001
+00853,CALSHOT,calshot,hampshire,50.82,-1.307,2,1969,1985
+00855,OTTERBOURNE W WKS,otterbourne-w-wks,hampshire,51.009,-1.335,34,1994,2001
+00858,SOLENT,solent,hampshire,50.808,-1.211,9,1973,2015
+00859,MARTYR WORTHY,martyr-worthy,hampshire,51.103,-1.263,85,1994,1995
+00860,"KINGSCLERE, STRATTONS FARM",kingsclere-strattons-farm,hampshire,51.344,-1.265,102,1991,1991
+00862,ODIHAM,odiham,hampshire,51.239,-0.945,118,1991,2017
+00863,HAYLING ISLAND,hayling-island,hampshire,50.785,-0.986,4,1996,1996
+00865,"BUTSER, WINDMILL HILL",butser-windmill-hill,hampshire,50.944,-0.976,92,1990,2001
+00867,LONG SUTTON,long-sutton,hampshire,51.213,-0.93,145,1997,1997
+00868,ALICE HOLT LODGE,alice-holt-lodge,hampshire,51.178,-0.85,115,1994,2001
+00869,SOUTH FARNBOROUGH,south-farnborough,hampshire,51.28,-0.773,65,1957,2017
+00876,WIGHT: ST CATHERINES POINT,wight-st-catherines-point,isle-of-wight,50.576,-1.297,20,1997,2017
+00877,WIGHT: VENTNOR PARK,wight-ventnor-park,isle-of-wight,50.593,-1.213,60,1995,1995
+00882,NETHERAVON,netheravon,wiltshire,51.244,-1.766,129,1993,1995
+00886,LYNEHAM,lyneham,wiltshire,51.503,-1.992,145,1976,2017
+00888,LARKHILL,larkhill,wiltshire,51.202,-1.806,132,1957,2017
+00889,BOSCOMBE DOWN,boscombe-down,wiltshire,51.162,-1.755,126,1957,2017
+00892,PORTON,porton,wiltshire,51.128,-1.701,111,1983,1986
+00896,ORSAY,orsay,argyll-in-strathclyde-region,55.674,-6.511,23,1997,1997
+00898,"COLONSAY, HOTEL",colonsay-hotel,argyll-in-strathclyde-region,56.069,-6.195,15,1993,1998
+00900,AROS,aros,argyll-in-strathclyde-region,56.536,-5.981,37,1981,1983
+00908,MACHRIHANISH,machrihanish,argyll-in-strathclyde-region,55.441,-5.697,10,1965,2017
+00916,LEPHINMORE,lephinmore,argyll-in-strathclyde-region,56.084,-5.24,9,1959,1967
+00917,KNAPDALE FOREST NO 2,knapdale-forest-no-2,argyll-in-strathclyde-region,56.059,-5.482,12,1981,1981
+00918,DUNSTAFFNAGE,dunstaffnage,argyll-in-strathclyde-region,56.45,-5.44,3,1973,2017
+00926,"BENMORE, YOUNGER BOTANIC GARDEN",benmore-younger-botanic-garden,argyll-in-strathclyde-region,56.028,-4.985,12,1992,1992
+00928,ARDENTINNY,ardentinny,argyll-in-strathclyde-region,56.046,-4.914,5,1979,1997
+00930,BLACK MOUNT,black-mount,argyll-in-strathclyde-region,56.545,-4.796,175,1989,1992
+00939,BUTE: ROTHESAY,bute-rothesay,buteshire,55.839,-5.064,43,1986,1986
+00940,GT CUMBRAE: MILLPORT,gt-cumbrae-millport,buteshire,55.749,-4.908,5,1984,1998
+00944,HELENSBURGH NO 2,helensburgh-no-2,dunbartonshire,56.016,-4.724,96,1981,1981
+00949,"GARTOCHARN, PORTNELLAN FARM",gartocharn-portnellan-farm,dunbartonshire,56.048,-4.567,40,1994,2001
+00950,ARROCHYMORE,arrochymore,stirling-in-central-region,56.093,-4.549,30,1980,1991
+00952,INCHTERF,inchterf,dunbartonshire,55.958,-4.119,40,1973,1992
+00953,CUMBERNAULD,cumbernauld,dunbartonshire,55.961,-3.969,94,1969,1977
+00954,MUGDOCK PARK,mugdock-park,stirling-in-central-region,55.973,-4.33,165,1990,2001
+00960,"FALKIRK, S WKS",falkirk-s-wks,stirling-in-central-region,56.018,-3.763,3,1994,1994
+00968,PAISLEY,paisley,renfrewshire,55.845,-4.431,32,1969,1985
+00970,RENFREW,renfrew,renfrewshire,55.867,-4.386,8,1949,1966
+00971,ABBOTSINCH,abbotsinch,renfrewshire,55.869,-4.431,5,1966,1999
+00973,DRUMCLOG,drumclog,lanarkshire,55.627,-4.201,227,1994,1994
+00978,EAST KILBRIDE NO 2,east-kilbride-no-2,lanarkshire,55.755,-4.172,178,1971,2005
+00981,COATBRIDGE,coatbridge,lanarkshire,55.855,-4.056,66,1981,1981
+00982,SALSBURGH,salsburgh,lanarkshire,55.861,-3.875,277,1980,2017
+00984,LOWTHER HILL,lowther-hill,lanarkshire,55.378,-3.753,754,1974,1990
+00987,DRUMALBIN,drumalbin,lanarkshire,55.627,-3.736,245,1991,2017
+00990,ABINGTON,abington,lanarkshire,55.489,-3.692,247,1982,1994
+00991,CARNWATH,carnwath,lanarkshire,55.7,-3.634,208,1970,1986
+00995,ARDROSSAN,ardrossan,ayrshire,55.642,-4.82,4,1969,1987
+00996,HUNTERSTON NO 3,hunterston-no-3,ayrshire,55.723,-4.893,8,1969,1992
+01005,AUCHINCRUIVE,auchincruive,ayrshire,55.477,-4.565,48,1973,1993
+01006,PRESTWICK NO 2,prestwick-no-2,ayrshire,55.501,-4.584,16,1957,1993
+01007,"PRESTWICK, GANNET",prestwick-gannet,ayrshire,55.515,-4.585,27,1996,2017
+01008,DALRY,dalry,ayrshire,55.718,-4.719,33,1994,1997
+01012,CUMNOCK,cumnock,ayrshire,55.453,-4.274,99,1998,2000
+01013,SAUGHALL,saughall,ayrshire,55.601,-4.226,221,1988,2008
+01015,"DUMFRIES, DRUNGANS",dumfries-drungans,kirkcudbrightshire,55.054,-3.645,16,1972,2004
+01017,DUMFRIES,dumfries,dumfriesshire,55.056,-3.595,49,1978,1998
+01023,ESKDALEMUIR,eskdalemuir,dumfriesshire,55.312,-3.207,236,1957,2017
+01024,BARGRENNAN,bargrennan,kirkcudbrightshire,55.077,-4.569,110,1992,1992
+01025,PALNURE NO 2,palnure-no-2,kirkcudbrightshire,54.952,-4.419,15,1979,1982
+01026,CLATTERINGSHAWS NO 2,clatteringshaws-no-2,kirkcudbrightshire,55.075,-4.266,178,1965,2003
+01033,DUNDRENNAN,dundrennan,kirkcudbrightshire,54.803,-4.008,113,1991,2017
+01034,GLENLOCHAR BARRAGE,glenlochar-barrage,kirkcudbrightshire,54.96,-3.982,47,1992,1992
+01039,WEST FREUGH,west-freugh,wigtownshire,54.859,-4.935,11,1969,2017
+01040,PENWHIRN,penwhirn,wigtownshire,54.983,-4.929,166,1978,1978
+01042,CREEBRIDGE,creebridge,wigtownshire,54.96,-4.475,18,1992,1992
+01043,WHITHORN,whithorn,wigtownshire,54.703,-4.418,40,1983,1994
+01051,SELLAFIELD,sellafield,cumbria,54.415,-3.501,13,1970,1996
+01053,SELLAFIELD NO 2,sellafield-no-2,cumbria,54.426,-3.507,22,1984,1991
+01054,ESKMEALS,eskmeals,cumbria,54.325,-3.408,8,1979,2001
+01055,ST BEES HEAD NO 2,st-bees-head-no-2,cumbria,54.518,-3.615,124,1992,2017
+01060,KESWICK,keswick,cumbria,54.614,-3.157,81,1992,2017
+01061,ASPATRIA,aspatria,cumbria,54.768,-3.316,62,1997,2003
+01066,DRUMBURGH,drumburgh,cumbria,54.932,-3.159,7,1997,1997
+01070,CARLISLE,carlisle,cumbria,54.934,-2.964,28,1961,2008
+01074,WARCOP RANGE,warcop-range,cumbria,54.572,-2.413,227,1992,2017
+01075,SPADEADAM,spadeadam,cumbria,55.041,-2.629,274,1970,1973
+01076,SPADEADAM NO 2,spadeadam-no-2,cumbria,55.05,-2.554,285,1993,2017
+01078,WALNEY ISLAND,walney-island,cumbria,54.125,-3.258,15,1992,2017
+01083,SHAP,shap,cumbria,54.502,-2.685,252,1992,2017
+01084,GREAT DUN FELL,great-dun-fell,cumbria,54.684,-2.45,847,1964,2004
+01085,GREAT DUN FELL NO 2,great-dun-fell-no-2,cumbria,54.684,-2.451,847,1994,2017
+01086,MOOR HOUSE,moor-house,cumbria,54.69,-2.377,556,1970,1980
+01087,WIDDYBANK FELL,widdybank-fell,cumbria,54.663,-2.284,513,1994,1995
+01090,"BLACKPOOL, SQUIRES GATE",blackpool-squires-gate,lancashire,53.775,-3.038,10,1957,2017
+01093,AIGBURTH (RTC),aigburth-rtc,merseyside,53.36,-2.927,12,1970,1993
+01095,SOUTHPORT,southport,merseyside,53.679,-2.954,5,1970,1973
+01096,AUGHTON,aughton,lancashire,53.55,-2.916,54,1978,1996
+01098,FLEETWOOD,fleetwood,lancashire,53.926,-3.017,19,1970,1992
+01100,GRIZEDALE,grizedale,cumbria,54.338,-3.021,91,1996,2000
+01101,SPEKE,speke,merseyside,53.332,-2.847,22,1957,1977
+01105,HAZELRIGG,hazelrigg,lancashire,54.014,-2.775,95,1994,2001
+01111,"PRESTON, MOOR PARK",preston-moor-park,lancashire,53.774,-2.705,33,1994,2001
+01112,MYERSCOUGH,myerscough,lancashire,53.854,-2.767,14,1990,1990
+01115,WINTER HILL,winter-hill,lancashire,53.626,-2.516,440,1995,2012
+01119,STONYHURST,stonyhurst,lancashire,53.845,-2.47,115,2002,2002
+01120,MANCHESTER WEATHER CENTRE,manchester-weather-centre,greater-manchester,53.483,-2.244,69,1961,1986
+01125,ROCHDALE,rochdale,greater-manchester,53.609,-2.179,110,2007,2017
+01128,BIDSTON,bidston,merseyside,53.4,-3.075,60,1969,1971
+01130,NESS GARDENS,ness-gardens,cheshire,53.272,-3.047,38,1994,2001
+01131,DELAMERE FOREST NO 2,delamere-forest-no-2,cheshire,53.237,-2.707,68,1989,1989
+01135,RINGWAY,ringway,greater-manchester,53.356,-2.281,69,1949,2004
+01136,MACCLESFIELD,macclesfield,cheshire,53.265,-2.136,143,1997,1997
+01137,RHYL NO 2,rhyl-no-2,clwyd,53.259,-3.509,77,1992,2017
+01142,MOEL-Y-CRIO,moel-y-crio,clwyd,53.22,-3.209,263,1997,2005
+01144,HAWARDEN AIRPORT,hawarden-airport,clwyd,53.175,-2.986,11,1992,2017
+01145,VALLEY,valley,gwynedd,53.253,-4.536,10,1957,2017
+01151,"COLWYN BAY, NURSERY GARDENS",colwyn-bay-nursery-gardens,clwyd,53.293,-3.712,24,1980,1980
+25728,HEMSBY TRIAL,hemsby-trial,norfolk,52.686,1.687,14,2000,2001
+01154,"LOGGERHEADS, COLOMENDY CENTRE",loggerheads-colomendy-centre,clwyd,53.149,-3.197,225,1994,2001
+01161,ABERDARON,aberdaron,gwynedd,52.789,-4.741,95,1993,2017
+01165,PEN-Y-FFRIDD,pen-y-ffridd,gwynedd,53.21,-4.155,86,1994,1997
+01167,SNOWDON SUMMIT,snowdon-summit,gwynedd,53.068,-4.077,1040,1997,2000
+01170,ABER NO 2,aber-no-2,gwynedd,53.238,-4.015,15,1994,2001
+01171,CAPEL CURIG NO 3,capel-curig-no-3,gwynedd,53.094,-3.941,216,1993,2017
+01173,ARTHOG NO 2,arthog-no-2,gwynedd,52.718,-4.015,7,1994,1994
+01176,TRAWSFYNYDD,trawsfynydd,gwynedd,52.932,-3.943,193,1970,1998
+16580,"CAIRNORRIE, DRAKEMYRE CROFT",cairnorrie-drakemyre-croft,aberdeenshire,57.464,-2.208,154,1995,2001
+01180,BALA,bala,gwynedd,52.908,-3.584,163,1975,2017
+01185,MACHYNLLETH,machynlleth,powys-north,52.622,-3.843,76,1987,1987
+01187,MOEL CYNNEDD,moel-cynnedd,powys-north,52.475,-3.705,358,1994,1999
+01190,LAKE VYRNWY NO 2,lake-vyrnwy-no-2,powys-north,52.757,-3.465,360,1994,2017
+01192,NEWTOWN,newtown,powys-north,52.5,-3.341,120,1991,1991
+01198,ABERPORTH,aberporth,dyfed,52.14,-4.571,133,1957,2017
+01201,"ABERYSTWYTH, FRONGOCH",aberystwyth-frongoch,dyfed,52.423,-4.052,137,1969,1969
+01205,GOGERDDAN,gogerddan,dyfed,52.432,-4.02,31,1994,2001
+01209,TRAWSGOED,trawsgoed,dyfed,52.344,-3.948,63,1992,2017
+01211,CWMYSTWYTH,cwmystwyth,dyfed,52.359,-3.803,301,1994,1999
+01214,DALE FORT,dale-fort,dyfed,51.703,-5.152,33,1994,2002
+01215,MILFORD HAVEN CONSERVANCY BOARD,milford-haven-conservancy-board,dyfed,51.709,-5.053,44,1969,2017
+01216,BRAWDY,brawdy,dyfed,51.88,-5.124,111,1969,1992
+01217,ORIELTON,orielton,dyfed,51.653,-4.96,60,1994,2001
+01223,WHITECHURCH,whitechurch,dyfed,51.989,-4.679,129,1995,1995
+01226,PEMBREY SANDS,pembrey-sands,dyfed,51.714,-4.367,3,1993,2017
+01233,BRONYDD-MAWR,bronydd-mawr,powys-south,51.964,-3.629,330,1994,2001
+01239,CEFN-LLECH,cefn-llech,powys-south,52.384,-3.537,317,1998,1998
+01246,PRESTEIGNE,presteigne,powys-south,52.283,-3.052,177,1988,1988
+01249,LIBANUS,libanus,powys-south,51.924,-3.489,331,1995,2001
+01250,PENCELLI,pencelli,powys-south,51.913,-3.324,160,1991,1991
+01255,MUMBLES HEAD,mumbles-head,west-glamorgan,51.566,-3.982,43,1998,2017
+01258,PORT TALBOT,port-talbot,west-glamorgan,51.567,-3.754,5,1970,1979
+01265,ABERDARE,aberdare,mid-glamorgan,51.718,-3.462,174,1976,1976
+01267,RHOOSE,rhoose,south-glamorgan,51.401,-3.344,65,1957,1998
+01268,CILFYNYDD,cilfynydd,mid-glamorgan,51.636,-3.302,194,1974,1996
+01270,FLAT HOLM,flat-holm,south-glamorgan,51.379,-3.123,15,1993,1998
+01271,CARDIFF WEATHER CENTRE,cardiff-weather-centre,south-glamorgan,51.478,-3.179,52,1992,2006
+01275,"TREDEGAR, BRYN BACH PARK",tredegar-bryn-bach-park,gwent,51.785,-3.276,380,1994,1995
+01276,"TREDEGAR, BRYN BACH PARK NO 2",tredegar-bryn-bach-park-no-2,gwent,51.784,-3.268,360,1995,1999
+01285,LISCOMBE,liscombe,somerset,51.087,-3.609,348,1993,2017
+01289,TIVINGTON,tivington,somerset,51.201,-3.531,83,1997,1998
+01290,"NETTLECOMBE, BIRDS HILL",nettlecombe-birds-hill,somerset,51.118,-3.349,271,1994,1994
+01293,CANNINGTON,cannington,somerset,51.153,-3.066,25,1996,2001
+01294,HINKLEY POINT,hinkley-point,somerset,51.2,-3.194,20,1983,1998
+01302,YEOVILTON,yeovilton,somerset,51.006,-2.643,20,1964,2017
+01304,RODNEY STOKE,rodney-stoke,somerset,51.248,-2.734,40,1994,1994
+01316,PORTLAND ,portland,dorset,50.566,-2.45,3,1993,1999
+01319,ISLE OF PORTLAND,isle-of-portland,dorset,50.522,-2.456,52,1969,2017
+01322,WINFRITH,winfrith,dorset,50.682,-2.256,26,1983,1996
+01324,FONTMELL MAGNA,fontmell-magna,dorset,50.951,-2.185,90,1989,1998
+01336,"PLYMOUTH, MOUNTBATTEN",plymouth-mountbatten,devon,50.355,-4.121,50,1949,2017
+01338,RUMLEIGH,rumleigh,devon,50.491,-4.196,23,1994,1995
+01340,"TAVISTOCK, KILWORTHY COLLEGE",tavistock-kilworthy-college,devon,50.572,-4.145,192,1980,1983
+01344,NORTH HESSARY TOR,north-hessary-tor,devon,50.549,-4.009,510,1997,2005
+01345,"OKEHAMPTON, EAST OKEMENT FARM",okehampton-east-okement-farm,devon,50.703,-3.977,408,1993,1995
+01346,CHIVENOR,chivenor,devon,51.089,-4.149,6,1957,2017
+01350,"PRINCETOWN, PRISON",princetown-prison,devon,50.549,-4.001,453,1998,1998
+01352,NORTH WYKE,north-wyke,devon,50.769,-3.904,177,1994,2017
+01353,"BURRINGTON, COMMON HEAD",burrington-common-head,devon,50.933,-3.987,199,1977,1999
+01356,SALCOMBE NO 2,salcombe-no-2,devon,50.24,-3.767,3,1997,1997
+01357,BRIXHAM,brixham,devon,50.397,-3.51,8,1997,2007
+01362,SLAPTON,slapton,devon,50.293,-3.652,32,1994,2001
+01363,STRETE,strete,devon,50.309,-3.633,125,1992,2000
+01366,"BOVEY TRACEY, YARNER WOOD NO 2",bovey-tracey-yarner-wood-no-2,devon,50.592,-3.717,198,1994,2001
+01367,BERRY HEAD,berry-head,devon,50.399,-3.484,58,1993,2017
+01369,"TORQUAY, ABBEY PARK",torquay-abbey-park,devon,50.465,-3.541,15,1996,1996
+01373,CLYST HONITON,clyst-honiton,devon,50.722,-3.439,22,1993,1997
+01378,EXETER AIRPORT,exeter-airport,devon,50.731,-3.417,27,1970,1991
+01380,ROUSDON NO 2,rousdon-no-2,devon,50.711,-3.0,150,1998,1998
+01382,HEMYOCK,hemyock,devon,50.909,-3.227,168,1994,2001
+01383,DUNKESWELL AERODROME,dunkeswell-aerodrome,devon,50.86,-3.24,252,1991,2017
+01385,SCILLY: ST MARYS,scilly-st-marys,isles-of-scilly,49.929,-6.303,51,1957,1981
+01386,SCILLY: ST MARYS AIRPORT,scilly-st-marys-airport,isles-of-scilly,49.915,-6.296,31,1991,2017
+01388,GWENNAP HEAD,gwennap-head,cornwall,50.037,-5.681,66,1971,1992
+01391,DAVIDSTOW MOOR,davidstow-moor,cornwall,50.641,-4.622,291,1997,2002
+01393,CULDROSE,culdrose,cornwall,50.084,-5.257,76,1977,2017
+01395,CAMBORNE,camborne,cornwall,50.218,-5.328,87,1978,2017
+01397,LIZARD,lizard,cornwall,49.963,-5.208,73,1970,1982
+01398,LIZARD LIGHTHOUSE,lizard-lighthouse,cornwall,49.959,-5.202,55,2000,2000
+01399,FALMOUTH,falmouth,cornwall,50.152,-5.078,51,1994,1995
+01405,ST MAWGAN,st-mawgan,cornwall,50.439,-4.998,103,1957,2008
+01408,HELIGAN,heligan,cornwall,50.283,-4.807,70,1998,1998
+01411,DELABOLE,delabole,cornwall,50.619,-4.725,201,1978,1982
+01412,TREKNOW,treknow,cornwall,50.646,-4.755,100,1994,1994
+01414,GOONHILLY DOWN,goonhilly-down,cornwall,50.049,-5.189,101,1982,1984
+01415,"CARDINHAM, BODMIN",cardinham-bodmin,cornwall,50.502,-4.667,200,1991,2017
+01418,BUDE,bude,cornwall,50.829,-4.546,15,1994,2000
+01426,BOOM HALL,boom-hall,londonderry,55.02,-7.305,33,1984,1984
+01428,LOUGHERMORE FOREST,loughermore-forest,londonderry,54.959,-7.089,174,1985,1985
+01429,BALLYKELLY,ballykelly,londonderry,55.057,-7.008,4,1957,2012
+01430,"DUNGIVEN, BOVEVAGH",dungiven-bovevagh,londonderry,54.971,-7.023,235,1986,1987
+01431,"BANAGHER, CAUGH HILL",banagher-caugh-hill,londonderry,54.886,-6.966,214,1974,2001
+01432,AGHANLOO,aghanloo,londonderry,55.073,-6.947,18,1982,1990
+01434,DERRYNOYD FOREST,derrynoyd-forest,londonderry,54.802,-6.803,88,1963,1963
+01435,LOUGH FEA,lough-fea,londonderry,54.721,-6.815,225,1994,2017
+01437,COLERAINE UNIVERSITY,coleraine-university,londonderry,55.154,-6.678,23,1969,2002
+01448,PORTGLENONE,portglenone,antrim,54.865,-6.458,64,1994,2017
+01449,LISNAFILLAN,lisnafillan,antrim,54.857,-6.326,38,1967,1999
+01450,ALDERGROVE,aldergrove,antrim,54.664,-6.225,63,1949,2017
+01452,ALTNAHINCH FILTERS,altnahinch-filters,antrim,55.048,-6.255,213,1965,2001
+01455,NUTTS CORNER,nutts-corner,antrim,54.632,-6.149,103,1958,1960
+01458,PARKMORE FOREST,parkmore-forest,antrim,55.019,-6.12,235,1992,1992
+01460,DUNGONNELL FILTERS NO 2,dungonnell-filters-no-2,antrim,54.989,-6.144,268,1992,1992
+01465,OLDPARK FILTERS,oldpark-filters,antrim,54.627,-5.949,58,1994,1995
+01467,BALLYPATRICK FOREST,ballypatrick-forest,antrim,55.181,-6.154,156,1968,2017
+01475,BELFAST NEWFORGE,belfast-newforge,down,54.56,-5.941,36,1982,2001
+01476,BELFAST HARBOUR,belfast-harbour,antrim,54.627,-5.892,43,1969,1994
+01480,LARNE,larne,antrim,54.852,-5.832,43,1997,2004
+01482,KILROOT POWER STATION,kilroot-power-station,antrim,54.727,-5.773,12,1984,1984
+01487,NEWRY CARNBANE,newry-carnbane,down,54.206,-6.351,8,2000,2000
+01488,KILLOWEN,killowen,down,54.077,-6.184,4,1997,2017
+01489,HILLSBOROUGH,hillsborough,down,54.453,-6.073,116,1965,2001
+01490,HILLSBOROUGH MET OFFICE,hillsborough-met-office,down,54.485,-6.098,38,1980,2003
+01491,SILENT VALLEY,silent-valley,down,54.127,-6.002,129,1977,2001
+01492,KILKEEL,kilkeel,down,54.058,-5.993,18,1957,1994
+01493,MOURNE GRANGE,mourne-grange,down,54.068,-6.043,44,1983,1983
+01495,"BALLYKINE, ROCKVALE",ballykine-rockvale,down,54.399,-5.93,125,1991,1991
+01497,BRYANSFORD,bryansford,down,54.228,-5.937,85,1995,1995
+01498,"BELFAST, SHAWS BRIDGE",belfast-shaws-bridge,down,54.548,-5.948,15,1979,1979
+01502,MURLOUGH,murlough,down,54.245,-5.832,12,1973,1973
+01504,KATESBRIDGE,katesbridge,down,54.297,-6.111,91,1997,2017
+01507,STORMONT CASTLE,stormont-castle,down,54.603,-5.83,56,1962,1973
+01509,MAGHERALLY,magherally,down,54.359,-6.196,97,1992,1992
+01516,CREIGHTONS GREEN,creightons-green,down,54.637,-5.785,119,1960,1960
+01517,BALLYWATTICOCK,ballywatticock,down,54.572,-5.657,6,1978,2001
+01518,"BANGOR, RATHGAEL",bangor-rathgael,down,54.639,-5.682,55,1990,1990
+01521,BANGOR HARBOUR,bangor-harbour,down,54.664,-5.669,11,1997,2007
+01523,HELENS BAY,helens-bay,down,54.669,-5.748,43,1984,1991
+01525,KILLOUGH,killough,down,54.243,-5.638,15,1977,1999
+01526,LOUGH COWEY,lough-cowey,down,54.414,-5.539,10,1978,2001
+01529,ORLOCK HEAD,orlock-head,down,54.674,-5.584,35,1969,2017
+01530,ARMAGH,armagh,armagh,54.352,-6.65,62,1992,2017
+01531,LOUGHGALL NO 1,loughgall-no-1,armagh,54.408,-6.604,25,1968,1995
+01532,ANNAGHMORE,annaghmore,armagh,54.459,-6.603,27,1984,1992
+01534,GLENANNE NO 2,glenanne-no-2,armagh,54.237,-6.503,161,1993,2017
+01535,TANDRAGEE BALLYLISK,tandragee-ballylisk,armagh,54.369,-6.427,43,1991,1991
+01538,PORTADOWN S WKS,portadown-s-wks,armagh,54.438,-6.43,16,1969,1974
+01542,LOUGH BRADAN,lough-bradan,tyrone,54.6,-7.6,169,1961,1984
+01543,CASTLEDERG,castlederg,tyrone,54.707,-7.577,49,1995,2017
+01549,CARRIGANS,carrigans,tyrone,54.675,-7.326,113,1964,1992
+01551,EDENFEL,edenfel,tyrone,54.594,-7.283,89,1988,1988
+01557,COOKSTOWN,cookstown,tyrone,54.615,-6.738,77,1973,1995
+01566,ELY LODGE,ely-lodge,fermanagh,54.408,-7.707,64,1959,1961
+01567,CASTLE ARCHDALE FOREST,castle-archdale-forest,fermanagh,54.482,-7.709,66,1966,1994
+01568,ST ANGELO,st-angelo,fermanagh,54.396,-7.645,47,1992,2013
+16725,WAINFLEET NO 2,wainfleet-no-2,lincolnshire,53.088,0.271,3,1996,2017
+24938,DURNESS NO 3,durness-no-3,sutherland,58.568,-4.763,222,1999,2002
+16769,WIGGONHOLT,wiggonholt,west-sussex,50.938,-0.494,28,1998,1998
+18901,"KIRRIEMUIR, ST MARYS RECTORY",kirriemuir-st-marys-rectory,angus,56.675,-3.012,135,1997,1997
+18902,"BUTTERSTONE, LUNANBANK",butterstone-lunanbank,perthshire-in-tayside-region,56.59,-3.485,85,1996,1997
+18903,SOUTH UIST RANGE,south-uist-range,western-isles,57.358,-7.385,4,1996,2017
+24996,"HEREFORD, CREDENHILL",hereford-credenhill,hereford-and-worcester,52.08,-2.802,76,1999,2017
+18959,"ABERFELDY, MAINS OF MURTHLY",aberfeldy-mains-of-murthly,perthshire-in-tayside-region,56.62,-3.837,174,1999,1999
+18961,POMEROY PRIMARY SCHOOL,pomeroy-primary-school,tyrone,54.594,-6.922,157,1997,1997
+18974,TIREE,tiree,argyll-in-strathclyde-region,56.5,-6.881,9,1957,2017
+19144,LONDON WEATHER CENTRE,london-weather-centre,greater-london,51.522,-0.112,43,1969,2001
+19172,SKYE: LUSA,skye-lusa,western-isles,57.257,-5.805,18,1997,2017
+19187,COLESHILL,coleshill,warwickshire,52.48,-1.691,96,1997,2017
+19188,ANDREWSFIELD,andrewsfield,essex,51.896,0.451,87,1997,2017
+19192,KILLYLANE,killylane,antrim,54.817,-6.005,250,1998,2001
+19202,KIRKMICHAEL NO 2,kirkmichael-no-2,perthshire-in-tayside-region,56.72,-3.52,265,1997,1998
+19203,BRIDGEFOOT,bridgefoot,cumbria,54.649,-3.459,49,1999,1999
+19204,GRINGLEY-ON-THE-HILL,gringley-on-the-hill,nottinghamshire,53.406,-0.884,68,1998,2001
+19206,ST ATHAN,st-athan,south-glamorgan,51.405,-3.441,49,1997,2017
+19221,BROOKHALL,brookhall,londonderry,55.031,-7.288,47,1999,1999
+19241,LLANBEDR,llanbedr,gwynedd,52.803,-4.124,9,1998,2004
+19259,"DUMFRIES, CRICHTON ROYAL NO 2",dumfries-crichton-royal-no-2,dumfriesshire,55.047,-3.589,50,1998,2001
+19260,"EDINBURGH, GOGARBANK",edinburgh-gogarbank,midlothian-in-lothian-region,55.928,-3.344,57,1998,2017
+61986,TIBENHAM AIRFIELD,tibenham-airfield,norfolk,52.457,1.162,52,2017,2017
+62041,EXETER AIRPORT NO 2,exeter-airport-no-2,devon,50.737,-3.406,27,2016,2017
+17176,"HIGH WYCOMBE, HQAIR",high-wycombe-hqair,buckinghamshire,51.682,-0.807,204,1995,2017
+17183,HUNT HALL FARM,hunt-hall-farm,durham,54.669,-2.229,370,1995,2001
+17185,LOWTOWN,lowtown,antrim,54.831,-6.01,213,1994,1996
+17224,WIGHT: NEEDLES OLD BATTERY,wight-needles-old-battery,isle-of-wight,50.663,-1.583,80,1996,2017
+30103,AVIEMORE TRIAL,aviemore-trial,inverness-shire,57.206,-3.828,228,2000,2001
+17309,CROSBY,crosby,merseyside,53.497,-3.058,9,1996,2017
+17310,"FETTERCAIRN, GLENSAUGH NO 2",fettercairn-glensaugh-no-2,kincardineshire,56.893,-2.542,171,1996,2001
+17314,LEEMING,leeming,north-yorkshire,54.297,-1.533,33,1965,2017
+30270,BEALACH NA BA NO 2,bealach-na-ba-no-2,ross-and-cromarty,57.418,-5.689,773,2001,2017
+17336,GLEN OGLE,glen-ogle,perthshire-in-central-region,56.423,-4.32,564,1996,2017
+17344,LOFTUS,loftus,cleveland,54.563,-0.864,158,1996,2017
+30437,DERRYLIN,derrylin,fermanagh,54.151,-7.575,70,2004,2007
+30523,ALBEMARLE,albemarle,northumberland,55.02,-1.882,142,2003,2017
+30620,CHARLWOOD,charlwood,surrey,51.144,-0.229,67,2002,2017
+30690,"LEEK, THORNCLIFFE",leek-thorncliffe,staffordshire,53.128,-1.981,298,2002,2017
+55511,WOODFORD,woodford,cheshire,53.339,-2.155,88,2003,2012
+16581,ROSEHEARTY,rosehearty,aberdeenshire,57.698,-2.123,4,1995,2012
+16588,"GRAVESEND, BROADNESS",gravesend-broadness,kent,51.465,0.311,3,1995,2017
+16589,REDESDALE CAMP,redesdale-camp,northumberland,55.285,-2.279,211,1997,2017
+06706,"GREENWICH, OBSERVATORY",greenwich-observatory,greater-london,51.478,-0.003,47,1998,1998
+16596,TOPCLIFFE,topcliffe,north-yorkshire,54.205,-1.39,25,1997,2017
+25729,MANSTON TRIAL,manston-trial,kent,51.352,1.348,44,2000,2000
+23417,ISLAY: PORT ELLEN,islay-port-ellen,argyll-in-strathclyde-region,55.681,-6.25,17,1998,2017
+23446,REDHILL,redhill,surrey,51.215,-0.137,63,1998,2006
+23491,HALESOWEN NO 2,halesowen-no-2,west-midlands,52.437,-2.076,153,1998,2001
+16608,"LITTLEHAMPTON, TODDINGTON LANE",littlehampton-toddington-lane,west-sussex,50.827,-0.529,3,1995,1998
+56486,MONA,mona,isle-of-anglesey,53.261,-4.376,60,2009,2017
+16611,SENNYBRIDGE NO 2,sennybridge-no-2,powys-south,52.063,-3.615,307,1995,2017
+23944,"NAIRN, DRUIM",nairn-druim,nairnshire,57.593,-3.822,23,1998,2001
+24102,"COVENTRY, COUNDON",coventry-coundon,west-midlands,52.424,-1.536,119,2001,2017
+24125,"GLASGOW, BISHOPTON",glasgow-bishopton,renfrewshire,55.907,-4.532,59,1999,2017
+56958,EMLEY MOOR NO 2,emley-moor-no-2,west-yorkshire,53.612,-1.668,267,2011,2017
+56963,MAGILLIGAN NO 2,magilligan-no-2,londonderry,55.16,-6.949,6,2011,2017
+56986,"HULL, EAST PARK",hull-east-park,humberside,53.766,-0.298,2,2012,2012
+57063,THOMASTOWN,thomastown,fermanagh,54.33,-7.595,72,2012,2017
+57113,ROSTHERNE,rostherne,cheshire,53.36,-2.382,35,2012,2013
+57199,ROSTHERNE NO 2,rostherne-no-2,cheshire,53.36,-2.382,35,2012,2017
+end data
