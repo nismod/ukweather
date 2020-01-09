@@ -37,49 +37,42 @@ def read_data(historical_data_dir, future_data_dir, historical_year, current_yea
     wind_daily = wind_daily_all[wind_daily_all.timestep == current_year]
     solar_daily = solar_daily_all[solar_daily_all.timestep == current_year]
 
-    #
-    # Get Wind Speed for the sim year
-    #
+    return wind_daily, wind_hist, solar_daily, solar_hist
 
-    # calculate daily mean of historic wind
-    wind_day_av = wind_hist.groupby(["day", "region"]).mean()["value"].reset_index()
+def calculate_daily_average(data):
+    """(day, region, hour, value) => (day, region, value)
+    """
+    return data.groupby(['day', 'region']).mean()['value'].reset_index()
 
-    # create key of [day_region]
-    # hourly historic data
-    list_values = (wind_hist["day"].astype(str) + "_" + wind_hist["region"].astype(str)).values
-    wind_hist["key"] = list_values
 
-    # daily averaged set of historic data
-    list_values2 = (
-        wind_day_av["day"].astype(str) + "_" + wind_day_av["region"].astype(str)).values
-    wind_day_av["key"] = list_values2
-
-    # daily data from weather@home
-    list_values3 = (
-        wind_daily["yearday"].astype(str) + "_" + wind_daily["region"].astype(str)).values
-    wind_daily["key"] = list_values3
-
+def normalise_hourly(data, daily_average):
+    """(day, region, hour, value), (day, region, value) => (day, region, hour, value)
+    """
     # merge historic hourly data and historic averaged data
-    wind_norm = wind_hist.merge(wind_day_av, how='left', on="key", suffixes=('_h', '_d'))
+    normalised = data.merge(
+        daily_average, how='left', on=['day', 'region'], suffixes=('_h', '_d'))
 
-    # normalise hourly values
-    # normalised value = (hourly value)/(daily mean)
-    wind_norm["value"] = wind_norm["value_h"]/wind_norm["value_d"]
+    # normalise hourly values = (hourly value) / (daily mean)
+    normalised["value"] = normalised.value_h / normalised.value_d
 
     # drop columns
-    wind_norm.drop(
+    normalised.drop(
         ["id", "year", "region_h", "parameter", "value_h", "day_d", "region_d", "value_d"],
         axis=1, inplace=True)
 
+
+def project_hourly(historical_normalised, future):
     # merge normalised hourly data and weather@home daily data
-    wind_speed = wind_norm.merge(wind_daily, how='left', on="key")
-    # hourlly value = (normalised hourly value) * (daily mean)
-    wind_speed["value"] = wind_speed["value"] * wind_speed["wss"]
+    merged = historical_normalised.merge(future, how='left', on=['day', 'region'])
+    # hourly value = (normalised hourly value) * (daily mean)
+    merged["value"] = merged.value * merged.wss
 
     #cleaning data frame
-    wind_speed.drop(["day_h", "key", "wss"], axis=1, inplace=True)
-    wind_speed.rename(columns={"timestep":"year", "yearday":"day"}, inplace=True)
+    merged.drop(["day_h", "key", "wss"], axis=1, inplace=True)
+    merged.rename(columns={"timestep":"year", "yearday":"day"}, inplace=True)
 
+
+def solar_rest(solar_hist, solar_daily, historical_year, scenario, wind_speed):
     #
     # Get insolation for the sim year
     #
